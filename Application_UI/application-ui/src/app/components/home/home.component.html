@@ -1,0 +1,11 @@
+<nav class="navbar navbar-light bg-light justify-content-between">
+    <a class="navbar-brand">Angular AUTH</a>
+    <div>
+        <h4>Hello, {{fullName}}, {{role}}</h4>
+    </div>
+  </nav>
+
+<ng-container *ngIf = "role === 'User'">
+    <h1>Catelul</h1>
+</ng-container>
+

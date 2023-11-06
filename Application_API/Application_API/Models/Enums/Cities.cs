@@ -1,0 +1,37 @@
+﻿namespace Application_API.Models.Enums;
+
+public enum Cities
+{
+    Bucuresti,
+    Bacau,
+    Brasov,
+    Braila,
+    Galati,
+    ClujNapoca,
+    Constanta,
+    Craiova,
+    Iasi,
+    Oradea,
+    Ploiesti,
+    Timisoara,
+    AlbaIulia,
+    Arad,
+    Pitesti,
+    Bistrita,
+    Botosani,
+    Buzau,
+    Resita,
+    Calarasi,
+    SfantuGheorge,
+    Targoviste,
+    Giurgiu,
+    TarguJiu,
+    MiercureaCiuc,
+    Deva,
+    DrobetaTurnuSeverin,
+    BaiaMare,
+    PiatraNeamt,
+    Slatina,
+    Sibiu,
+    RamnicuValcea
+}

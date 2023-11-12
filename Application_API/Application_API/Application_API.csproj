@@ -26,7 +26,6 @@
 
   <ItemGroup>
     <Folder Include="Data\Enums\" />
-    <Folder Include="Repositories\Interfaces\" />
   </ItemGroup>
 
 </Project>

@@ -398,3 +398,6 @@ FodyWeavers.xsd
 *.sln.iml
 
 /Application_API/Application_API/appsettings.json
+Application_API/Application_API/Migrations/20231111141453_grigMigration.cs
+Application_API/Application_API/Migrations/20231111141453_grigMigration.Designer.cs
+Application_UI/.idea/workspace.xml

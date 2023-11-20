@@ -13,11 +13,11 @@ public class Animals
     public string Health { get; set; } = String.Empty;
     public AnimalGenders Gender { get; set; }
     public GoodWith GoodWith { get; set; }
-    public CoatTypes CoatLength { get; }
+    public CoatTypes CoatLength { get; set; }
     public bool SpecialTrained { get; set; }
     
     public Guid ShelterId { get; set; }
-    public Shelters Shelter { get; set; }
+    public Shelters? Shelter { get; set; }
 
     public Animals(string type, string breed, string name, int age, Sizes size, string health,
         AnimalGenders gender,

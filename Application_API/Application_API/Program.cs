@@ -49,6 +49,8 @@ builder.Services.AddAuthentication(x =>
 
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IEmailService, EmailService>();
+builder.Services.AddScoped<IAnimalService, AnimalService>();
+builder.Services.AddScoped<IShelterService, ShelterService>();
 
 builder.Services.AddScoped<IAnimalsRepository, AnimalsRepository>();
 builder.Services.AddScoped<ISheltersRepository, SheltersRepository>();

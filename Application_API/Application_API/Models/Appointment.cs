@@ -9,14 +9,12 @@ public class Appointment
     public Guid AnimalId { get; set; }
     public Animals Animal { get; set; }
 
-    public Appointment(DateTime appointmentDate, string fullName, string idDetails, Guid animalId,
-        Animals animal)
+    public Appointment(DateTime appointmentDate, string fullName, string idDetails, Guid animalId)
     {
         Id = Guid.NewGuid();
         AppointmentDate = appointmentDate;
         FullName = fullName;
         IdDetails = idDetails;
         AnimalId = animalId;
-        Animal = animal;
     }
 }

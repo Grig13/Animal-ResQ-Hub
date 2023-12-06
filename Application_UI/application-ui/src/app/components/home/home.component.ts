@@ -3,6 +3,7 @@ import { AuthenticationService } from 'src/services/authentication/authenticatio
 import { UserStoreService } from 'src/services/user-store/user-store.service';
 import {AnimalsService} from "../../../services/animals/animals.service";
 
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',

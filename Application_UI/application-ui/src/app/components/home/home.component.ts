@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthenticationService } from 'src/services/authentication/authentication.service';
 import { UserStoreService } from 'src/services/user-store/user-store.service';
+import {AnimalsService} from "../../../services/animals/animals.service";
 
 @Component({
   selector: 'app-home',
@@ -12,7 +13,8 @@ export class HomeComponent implements OnInit {
   public users: any = [];
   public fullName : string = "";
   public role! : string;
-  constructor(private auth: AuthenticationService, private userStore: UserStoreService){}
+  showForm = false;
+  constructor(private auth: AuthenticationService, private userStore: UserStoreService, private animalsService: AnimalsService){}
 
   ngOnInit(): void {
     this.auth.getUsers()

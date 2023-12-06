@@ -1,1 +1,15 @@
-@import url('assets/css/common.css');
+@import url("assets/css/common.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: rgb(243, 242, 242);
+}

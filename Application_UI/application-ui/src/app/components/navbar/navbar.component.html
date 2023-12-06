@@ -1,29 +1,57 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a routerLink="/" class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a routerLink="/" class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a routerLink="/" class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown link
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a routerLink="/" class="dropdown-item" href="#">Action</a>
-            <a routerLink="/" class="dropdown-item" href="#">Another action</a>
-            <a routerLink="/" class="dropdown-item" href="#">Something else here</a>
+<div class="bg-gray-800 text-white p-4">
+  <div class="container mx-auto flex justify-between items-center">
+    <a routerLink="" class="text-2xl font-bold">Pet Rental</a>
+
+    <nav class="space-x-4">
+      <button class="hover:underline">Home</button>
+      <button (click)="toggleDropdown()" class="hover:underline">Pets</button>
+      <button class="hover:underline">Rentals</button>
+      <div *ngIf="showDropdown" class="relative inline-block text-left">
+        <div
+          class="origin-top-right absolute right-0 mt-2 w-40 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
+          role="menu"
+          aria-orientation="vertical"
+          aria-labelledby="menu-button"
+          tabindex="-1"
+        >
+          <div class="py-1" role="none">
+            <button
+              class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full"
+              role="menuitem"
+              tabindex="-1"
+              id="menu-item-0"
+            >
+              Dogs
+            </button>
+            <button
+              class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full"
+              role="menuitem"
+              tabindex="-1"
+              id="menu-item-1"
+            >
+              Cats
+            </button>
+            <button
+              class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full"
+              role="menuitem"
+              tabindex="-1"
+              id="menu-item-2"
+            >
+              Birds
+            </button>
           </div>
-        </li>
-      </ul>
-    </div>
-  </nav>
+        </div>
+      </div>
+      <!-- <a routerLink="/rentals" class="hover:underline">Rentals</a> -->
+    </nav>
+
+    <!-- <div class="space-x-4">
+      <ng-container *ngIf="isLoggedIn; else loggedOut">
+        <button (click)="logout()">Logout</button>
+      </ng-container>
+      <ng-template #loggedOut>
+        <button (click)="login()">Login</button>
+      </ng-template>
+    </div> -->
+  </div>
+</div>

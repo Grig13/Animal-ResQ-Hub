@@ -1,11 +1,124 @@
-<nav class="navbar navbar-light bg-light justify-content-between">
-    <a class="navbar-brand">Angular AUTH</a>
-    <div>
-        <h4>Hello, {{fullName}}, {{role}}</h4>
+<div class="flex w-full h-full background">
+  <div
+    class="h-[30rem] w-full bg-cover bg-center items-center"
+    style="background-image: url('../../../assets/logo/pet_background.jpg')"
+  >
+    <div
+      class="flex items-center justify-center h-full w-full flex-col relative"
+    >
+      <input
+        class="w-[8rem] px-4 py-2 border rounded-md focus:ring focus:border-blue-300"
+        type="text"
+        placeholder="Search..."
+      />
+      <div class="flex justify-center items-center flex-col mt-[10rem]">
+        <h1 class="text-[2rem] font-bold text-white">
+          Find your new best friend
+        </h1>
+        <h3 class="text-[1rem] font-medium text-white">
+          Browse pets from our network of over 11,500 shelters and rescues.
+        </h3>
+      </div>
+      <div class="w-full h-auto absolute top-[27rem]">
+        <ul class="w-full grid_ul text-center h-[7rem] justify-center">
+          <li
+            class="bg-white grid-cols-1 h-full text-center mx-[5rem] rounded-[.5rem]"
+          >
+            <button
+              class="w-full h-full flex flex-col justify-center items-center"
+            >
+              <i class="fa-solid fa-dog text-[4rem] p-[1rem]"></i>
+              Dogs
+            </button>
+          </li>
+          <li
+            class="bg-white grid-cols-1 h-full text-center mx-[5rem] rounded-[.5rem]"
+          >
+            <button
+              class="w-full h-full flex flex-col justify-center items-center"
+            >
+              <i class="fa-solid fa-cat text-[4rem] p-[1rem]"></i>
+
+              Cats
+            </button>
+          </li>
+          <li
+            class="bg-white grid-cols-1 h-full text-center mx-[5rem] rounded-[.5rem]"
+          >
+            <button
+              class="w-full h-full flex flex-col justify-center items-center"
+            >
+              <i class="fa-solid fa-paw text-[4rem] p-[1rem]"></i>
+              Other Animals
+            </button>
+          </li>
+        </ul>
+      </div>
     </div>
-  </nav>
-
-<ng-container *ngIf = "role === 'User'">
-    <h1>Catelul</h1>
-</ng-container>
-
+    <div
+      class="mt-[10rem] flex gap-2 w-full h-auto justify-center items-center text-[1.5rem]"
+    >
+      <h1 class="cursor-pointer hover:text-gray-400">
+        Pets Available for Adoption
+        <i class="fa-solid fa-arrow-right cursor-pointer"></i>
+      </h1>
+    </div>
+    <div class="h-auto my-[1.8rem]">
+      <ul class="w-full grid_ul text-center justify-center">
+        <li
+          class="text-white flex justify-center items-end item grid-cols-1 text-center mx-[5rem] rounded-[.5rem] cursor-pointer bg-cover bg-center h-[23rem]"
+          style="background-image: url('../../../assets/logo/dog1.jpg')"
+        >
+          <h2 class="text-[1.5rem] w-full h-auto py-[1rem] bg-white text-black">
+            Max
+          </h2>
+        </li>
+        <li
+          class="text-white flex justify-center items-end item grid-cols-1 text-center mx-[5rem] rounded-[.5rem] cursor-pointer bg-cover bg-center h-[23rem]"
+          style="background-image: url('../../../assets/logo/cat1.jpg')"
+        >
+          <h2 class="text-[1.5rem] w-full h-auto py-[1rem] bg-white text-black">
+            Bella
+          </h2>
+        </li>
+        <li
+          class="bg-blue-600 text-white items-center item grid-cols-1 h-full text-center mx-[5rem] rounded-[.5rem] cursor-pointer flex flex-col w-auto justify-between"
+        >
+          <div class="flex flex-col justify-around w-full h-[50%] items-center">
+            <i class="fa-solid fa-paw text-[7rem] p-[1rem]"></i>
+            <p>100 more pets available</p>
+          </div>
+          <div class="border-t border-black h-auto w-full">
+            <span class="text-[1.5rem] w-full py-[1rem] uppercase"
+              >Meet them</span
+            >
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<footer class="bg-gray-800 text-white p-4 mt-[10rem]">
+  <div class="container mx-auto flex justify-between">
+    <div class="flex items-center space-x-4">
+      <p class="text-sm">Follow us:</p>
+      <a
+        href="https://www.facebook.com"
+        class="text-blue-400 hover:text-blue-200"
+        >Facebook</a
+      >
+      <a href="https://www.twitch.tv" class="text-blue-400 hover:text-blue-200"
+        >Twitter</a
+      >
+      <a
+        href="https://www.instagram.com"
+        class="text-blue-400 hover:text-blue-200"
+        >Instagram</a
+      >
+    </div>
+    <div class="flex items-center space-x-4">
+      <a href="#" class="text-blue-400 hover:text-blue-200">Privacy Policy</a>
+      <a href="#" class="text-blue-400 hover:text-blue-200">Terms of Service</a>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,18 @@
+.grid_ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.background {
+  background-color: rgb(243, 242, 242);
+}
+
+button:hover {
+  background-color: rgb(219, 218, 218);
+  border: 2px solid rgb(39, 38, 38);
+  border-radius: 0.5rem;
+}
+
+.item:hover {
+  border: 1px solid rgb(39, 38, 38);
+}

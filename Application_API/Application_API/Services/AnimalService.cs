@@ -25,6 +25,16 @@ namespace Application_API.Services
             return await _animalsRepository.GetAllAnimalsAsync();
         }
 
+        public async Task<IEnumerable<Animals>> GetDogs()
+        {
+            return await _animalsRepository.GetDogs();
+        }
+
+        public async Task<IEnumerable<Animals>> GetCats()
+        {
+            return await _animalsRepository.GetCats();
+        }
+
         public async Task<Animals> GetAnimalByIdAsync(Guid id)
         {
             return await _animalsRepository.GetAnimalByIdAsync(id);

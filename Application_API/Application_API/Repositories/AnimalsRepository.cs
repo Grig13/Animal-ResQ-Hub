@@ -20,6 +20,16 @@ public class AnimalsRepository : IAnimalsRepository
         return await _dbContext.Animals.ToListAsync();
     }
 
+    public async Task<IEnumerable<Animals>> GetDogs()
+    {
+        return await _dbContext.Animals.Where(animal => animal.Type == "Dog").ToListAsync();
+    }
+
+    public async Task<IEnumerable<Animals>> GetCats()
+    {
+        return await _dbContext.Animals.Where(animal => animal.Type == "Cat").ToListAsync();
+    }
+
     public async Task<Animals> GetAnimalByIdAsync(Guid id)
     {
         return await _dbContext.Animals.FindAsync(id);

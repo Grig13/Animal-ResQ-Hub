@@ -23,6 +23,20 @@ namespace Application_API.Controllers
             return Ok(animals);
         }
 
+        [HttpGet("dogs")]
+        public async Task<IActionResult> GetDogs()
+        {
+            var dogs = await _animalService.GetDogs();
+            return Ok(dogs);
+        }
+
+        [HttpGet("cats")]
+        public async Task<IActionResult> GetCats()
+        {
+            var cats = await _animalService.GetCats();
+            return Ok(cats);
+        }
+
         [HttpGet("animal-by-id")]
         public async Task<IActionResult> GetAnimalByIdAsync(Guid id)
         {

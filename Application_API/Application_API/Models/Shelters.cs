@@ -1,4 +1,5 @@
-﻿using Application_API.Models.Enums;
+﻿using System.ComponentModel.DataAnnotations;
+using Application_API.Models.Enums;
 
 namespace Application_API.Models;
 
@@ -7,6 +8,7 @@ public class Shelters
     public Guid Id { get; set; }
     public string ShelterName { get; set; } = String.Empty;
     public string ShelterDescription { get; set; } = String.Empty;
+    [EnumDataType(typeof(Cities))]
     public Cities ShelterLocation { get; set; }
     public int Capacity { get; set; }
     public string ShelterAddress { get; set; } = String.Empty;

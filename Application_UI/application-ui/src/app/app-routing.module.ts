@@ -6,13 +6,15 @@ import { SignupComponent } from './components/signup/signup.component';
 import { AuthGuard } from './guards/auth.guard';
 import { ResetPassword } from './models/reset-password.model';
 import { ResetPasswordComponent } from './components/reset-password/reset-password.component';
+import {DogsComponent} from "./components/dogs/dogs/dogs.component";
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
   { path: 'home', component: HomeComponent, canActivate: [AuthGuard]},
   { path: 'sign-up', component: SignupComponent},
-  { path: 'reset', component: ResetPasswordComponent}
+  { path: 'reset', component: ResetPasswordComponent},
+  { path: 'dogs', component: DogsComponent, canActivate: [AuthGuard]}
 ];
 
 @NgModule({

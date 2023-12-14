@@ -28,6 +28,7 @@
             class="bg-white grid-cols-1 h-full text-center mx-[5rem] rounded-[.5rem]"
           >
             <button
+              routerLink="/dogs"
               class="w-full h-full flex flex-col justify-center items-center"
             >
               <i class="fa-solid fa-dog text-[4rem] p-[1rem]"></i>
@@ -185,7 +186,7 @@
 
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button (click)="addAnimals()" type="submit" class="btn btn-primary">Submit</button>
         </div>
       </div>
     </div>

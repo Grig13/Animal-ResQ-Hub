@@ -18,6 +18,7 @@ import { SignupComponent } from './components/signup/signup.component';
 import { ToastrModule } from 'ngx-toastr';
 import { ResetPasswordComponent } from './components/reset-password/reset-password.component';
 import { TokenInterceptor } from './interceptors/token.interceptor';
+import { DogsComponent } from './components/dogs/dogs/dogs.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { TokenInterceptor } from './interceptors/token.interceptor';
     LoginComponent,
     SignupComponent,
     ResetPasswordComponent,
+    DogsComponent,
   ],
   imports: [
     MatButtonModule,
